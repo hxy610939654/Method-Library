@@ -1,2 +1,2 @@
 # Method-Library
-JS method library
+Method library
