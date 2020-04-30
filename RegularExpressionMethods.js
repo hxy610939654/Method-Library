@@ -2,7 +2,7 @@
 * @Author: WRBH
 * @Date:   2020-04-29 10:45:51
 * @Last Modified by:   WRBH
-* @Last Modified time: 2020-04-29 12:56:27
+* @Last Modified time: 2020-04-29 15:37:17
 */
 var regexp = {
     // Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.
@@ -37,7 +37,7 @@ fucntion trim(str){
 
 //to camel case
 var str = "background-color",
-    pattern = /-(a-z)/gi;
+    pattern = /-(a-z)|\s(a-z)/gi;
 function toCamelCase(str){
     return str.replace(pattern,function(all,letter){
         return letter.toUpperCase();
